@@ -1,0 +1,305 @@
+:root {
+  --grey: #6c6c6c;
+  --teal: #5a7069;
+  --light: #eeeeee;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  padding: 0;
+  margin: 0;
+  background-color: var(--light);
+}
+
+.greeting {
+  background-color: var(--teal);
+  color: var(--light);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.greeting section {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting section p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+.greeting section button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#greeting-title {
+  margin: 0;
+  font-size: 700%;
+}
+
+#btn-cont a {
+  color: var(--light);
+}
+
+#btn-cont a:hover {
+  color: var(--teal);
+  transition: 0.5s;
+}
+
+#btn-cont {
+  transform: translateY(800%);
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: var(--teal);
+  border-style: none;
+  border: 2px solid var(--light);
+}
+
+#button:hover {
+  color: var(--teal);
+  background-color: var(--light);
+  border: 2px solid var(--teal);
+  transition: 0.5s;
+}
+
+.resume {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title-subhead a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+#name {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  color: var(--grey);
+  font-size: 150%;
+}
+
+#name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#title-subhead,
+#career-summary-subhead,
+#edu-subhead {
+  font-size: 100%;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--grey);
+}
+
+/* Set width of sections for large screens */
+
+.career-summary,
+.education,
+.experience,
+.skills {
+  width: 45%;
+}
+
+#career-summary-title,
+#education-title,
+#skills-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  color: var(--grey);
+  font-size: 140%;
+}
+
+#oregon-cont {
+  display: block;
+}
+
+#oregon-headers,
+#oregon-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#oregon-headers h3 {
+  margin: 20px 0 0 0;
+}
+
+#oregon-desc p {
+  font-style: italic;
+  font-size: 100%;
+  margin: 10px 0 0 0;
+}
+
+#GPA {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1440px) {
+  #btn-cont {
+    transform: translateY(500%);
+  }
+
+  #button {
+    padding: 10px;
+    border-radius: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #btn-cont {
+    transform: translateY(500%);
+  }
+
+  #button {
+    padding: 10px;
+    border-radius: 100%;
+  }
+
+  .title {
+    width: 80%;
+  }
+}
+
+/* Adjust width and font size for medium screens */
+@media only screen and (max-width: 768px) {
+  .greeting {
+    height: 100vh; /* Adjust height to fit content */
+    padding: 10%; /* Add padding for spacing */
+  }
+
+  #greeting-title {
+    font-size: 500%; /* Reduce font size for smaller screens */
+    text-align: center; /* Center-align text */
+  }
+
+  .greeting section p {
+    font-size: 80%; /* Reduce font size for smaller screens */
+  }
+  .career-summary,
+  .education,
+  .experience,
+  .skills {
+    width: 80%;
+  }
+
+  #btn-cont {
+    transform: translateY(240%);
+  }
+
+  #button {
+    padding: 10px;
+    border-radius: 100%;
+    transform: scale(1.5);
+  }
+
+  #name {
+    font-size: 120%;
+  }
+
+  #title-subhead,
+  #career-summary-subhead,
+  #edu-subhead {
+    font-size: 90%;
+  }
+}
+
+/* Adjust width and font size for small screens */
+@media only screen and (max-width: 480px) {
+  .greeting {
+    height: 100vh; /* Adjust height to fit content */
+    padding: 10%; /* Add padding for spacing */
+  }
+
+  #greeting-title {
+    font-size: 300%; /* Reduce font size for smaller screens */
+    text-align: center; /* Center-align text */
+  }
+
+  .greeting section p {
+    font-size: 80%; /* Reduce font size for smaller screens */
+  }
+
+  #btn-cont {
+    transform: translateY(190%);
+  }
+
+  #button {
+    padding: 10px;
+    border-radius: 100%;
+    transform: scale(1.5);
+  }
+
+  .title {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+
+  #career-summary-title,
+  #education-title,
+  #skills-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    color: var(--grey);
+    font-size: 140%;
+  }
+
+  #oregon-cont {
+    display: block;
+  }
+
+  #oregon-headers,
+  #oregon-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #oregon-headers h3 {
+    margin: 20px 0 0 0;
+  }
+
+  p {
+    font-size: 80%;
+  }
+
+  h3 {
+    font-size: 80%;
+  }
+
+  #oregon-desc p {
+    font-style: italic;
+    font-size: 80%;
+    margin: 10px 0 0 0;
+  }
+}
